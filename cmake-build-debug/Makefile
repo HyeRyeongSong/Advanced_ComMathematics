@@ -150,60 +150,6 @@ Problem_2_2.cpp.s:
 	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/Problem_2_2.cpp.s
 .PHONY : Problem_2_2.cpp.s
 
-Problem_3_1.o: Problem_3_1.cpp.o
-
-.PHONY : Problem_3_1.o
-
-# target to build an object file
-Problem_3_1.cpp.o:
-	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/Problem_3_1.cpp.o
-.PHONY : Problem_3_1.cpp.o
-
-Problem_3_1.i: Problem_3_1.cpp.i
-
-.PHONY : Problem_3_1.i
-
-# target to preprocess a source file
-Problem_3_1.cpp.i:
-	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/Problem_3_1.cpp.i
-.PHONY : Problem_3_1.cpp.i
-
-Problem_3_1.s: Problem_3_1.cpp.s
-
-.PHONY : Problem_3_1.s
-
-# target to generate assembly for a file
-Problem_3_1.cpp.s:
-	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/Problem_3_1.cpp.s
-.PHONY : Problem_3_1.cpp.s
-
-Problem_3_2.o: Problem_3_2.cpp.o
-
-.PHONY : Problem_3_2.o
-
-# target to build an object file
-Problem_3_2.cpp.o:
-	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/Problem_3_2.cpp.o
-.PHONY : Problem_3_2.cpp.o
-
-Problem_3_2.i: Problem_3_2.cpp.i
-
-.PHONY : Problem_3_2.i
-
-# target to preprocess a source file
-Problem_3_2.cpp.i:
-	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/Problem_3_2.cpp.i
-.PHONY : Problem_3_2.cpp.i
-
-Problem_3_2.s: Problem_3_2.cpp.s
-
-.PHONY : Problem_3_2.s
-
-# target to generate assembly for a file
-Problem_3_2.cpp.s:
-	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/Problem_3_2.cpp.s
-.PHONY : Problem_3_2.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -216,12 +162,6 @@ help:
 	@echo "... Problem_2_2.o"
 	@echo "... Problem_2_2.i"
 	@echo "... Problem_2_2.s"
-	@echo "... Problem_3_1.o"
-	@echo "... Problem_3_1.i"
-	@echo "... Problem_3_1.s"
-	@echo "... Problem_3_2.o"
-	@echo "... Problem_3_2.i"
-	@echo "... Problem_3_2.s"
 .PHONY : help
 
 
