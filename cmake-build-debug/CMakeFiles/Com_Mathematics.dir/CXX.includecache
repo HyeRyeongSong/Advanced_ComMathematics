@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/hyeryeongsong/Com_Mathematics/Problem_2_2.cpp
+iostream
+-
+cmath
+-
+
+/Users/hyeryeongsong/Com_Mathematics/Problem_3_1.cpp
+iostream
+-
+cmath
+-
+
+/Users/hyeryeongsong/Com_Mathematics/Problem_3_2.cpp
+iostream
+-
+cmath
+-
+
