@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/hyeryeongsong/Com_Mathematics/Example3.cpp" "/Users/hyeryeongsong/Com_Mathematics/cmake-build-debug/CMakeFiles/Com_Mathematics.dir/Example3.cpp.o"
+  "/Users/hyeryeongsong/Com_Mathematics/A.cpp" "/Users/hyeryeongsong/Com_Mathematics/cmake-build-debug/CMakeFiles/Com_Mathematics.dir/A.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
