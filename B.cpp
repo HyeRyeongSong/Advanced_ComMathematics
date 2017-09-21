@@ -11,8 +11,8 @@ double Fuction(double dValue);
 
 int main()
 {
-    double dA = 1.0;
-    double dB = 2.0;
+    double dA = 3.0;
+    double dB = 4.0;
     double dfA = 0;
     double dfB = 0;
     double dC = 0;
@@ -57,7 +57,7 @@ int main()
 
         printf("new b - a: %3.5f\n", abs(dB - dA));
 
-        if(abs(dB -dA) < 0.01)
+        if(abs(dB -dA) < 0.001)
             break;
     }
 
@@ -66,5 +66,5 @@ int main()
 
 double Fuction(double dValue)
 {
-    return (pow(dValue, 2) - 3);
+    return (pow(M_E, dValue) * ((3.2 * sin(dValue) - 0.5 * cos(dValue))));
 }
