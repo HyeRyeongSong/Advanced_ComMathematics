@@ -1,8 +1,4 @@
 //
-// Created by HyeRyeongSong on 2017. 9. 27..
-//
-
-//
 // Created by HyeRyeongSong on 2017. 9. 21..
 //
 
@@ -15,8 +11,8 @@ double Fuction(double dValue);
 
 int main()
 {
-    double dA = 1.0;
-    double dB = 2.0;
+    double dA = 3.0;
+    double dB = 4.0;
     double dfA = 0;
     double dfB = 0;
     double dC = 0;
@@ -24,7 +20,7 @@ int main()
     bool bIsA = true; //if Update is a=c --> true
     double dError = 0;
 
-    printf("   %-8s%-8s%-8s%-9s%-8s%-8s%-8s%-9s\n", "a", "b", "f(a)", "f(b)", "c",
+    printf("     %-8s%-8s%-8s%-9s%-8s%-8s%-8s%-9s\n", "a", "b", "f(a)", "f(b)", "c",
            "f(c)", "Update", " B - A ");
 
     while(true)
@@ -63,7 +59,7 @@ int main()
 
         printf("%3.5f\n", abs(dB - dA));
 
-        if(abs(dB -dA) < 0.01)
+        if(abs(dB -dA) < 0.001)
             break;
     }
 
@@ -72,5 +68,5 @@ int main()
 
 double Fuction(double dValue)
 {
-    return (pow(dValue, 2) - 3);
+    return (pow(M_E, dValue) * ((3.2 * sin(dValue) - 0.5 * cos(dValue))));
 }
