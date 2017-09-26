@@ -57,38 +57,38 @@ include CMakeFiles/Com_Mathematics.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Com_Mathematics.dir/flags.make
 
-CMakeFiles/Com_Mathematics.dir/C.cpp.o: CMakeFiles/Com_Mathematics.dir/flags.make
-CMakeFiles/Com_Mathematics.dir/C.cpp.o: ../C.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hyeryeongsong/Com_Mathematics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Com_Mathematics.dir/C.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Com_Mathematics.dir/C.cpp.o -c /Users/hyeryeongsong/Com_Mathematics/C.cpp
+CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.o: CMakeFiles/Com_Mathematics.dir/flags.make
+CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.o: ../Tuesday_Handwriting.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hyeryeongsong/Com_Mathematics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.o -c /Users/hyeryeongsong/Com_Mathematics/Tuesday_Handwriting.cpp
 
-CMakeFiles/Com_Mathematics.dir/C.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Com_Mathematics.dir/C.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hyeryeongsong/Com_Mathematics/C.cpp > CMakeFiles/Com_Mathematics.dir/C.cpp.i
+CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hyeryeongsong/Com_Mathematics/Tuesday_Handwriting.cpp > CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.i
 
-CMakeFiles/Com_Mathematics.dir/C.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Com_Mathematics.dir/C.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hyeryeongsong/Com_Mathematics/C.cpp -o CMakeFiles/Com_Mathematics.dir/C.cpp.s
+CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hyeryeongsong/Com_Mathematics/Tuesday_Handwriting.cpp -o CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.s
 
-CMakeFiles/Com_Mathematics.dir/C.cpp.o.requires:
+CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.o.requires:
 
-.PHONY : CMakeFiles/Com_Mathematics.dir/C.cpp.o.requires
+.PHONY : CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.o.requires
 
-CMakeFiles/Com_Mathematics.dir/C.cpp.o.provides: CMakeFiles/Com_Mathematics.dir/C.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/C.cpp.o.provides.build
-.PHONY : CMakeFiles/Com_Mathematics.dir/C.cpp.o.provides
+CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.o.provides: CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.o.provides.build
+.PHONY : CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.o.provides
 
-CMakeFiles/Com_Mathematics.dir/C.cpp.o.provides.build: CMakeFiles/Com_Mathematics.dir/C.cpp.o
+CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.o.provides.build: CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.o
 
 
 # Object files for target Com_Mathematics
 Com_Mathematics_OBJECTS = \
-"CMakeFiles/Com_Mathematics.dir/C.cpp.o"
+"CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.o"
 
 # External object files for target Com_Mathematics
 Com_Mathematics_EXTERNAL_OBJECTS =
 
-Com_Mathematics: CMakeFiles/Com_Mathematics.dir/C.cpp.o
+Com_Mathematics: CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.o
 Com_Mathematics: CMakeFiles/Com_Mathematics.dir/build.make
 Com_Mathematics: CMakeFiles/Com_Mathematics.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hyeryeongsong/Com_Mathematics/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Com_Mathematics"
@@ -99,7 +99,7 @@ CMakeFiles/Com_Mathematics.dir/build: Com_Mathematics
 
 .PHONY : CMakeFiles/Com_Mathematics.dir/build
 
-CMakeFiles/Com_Mathematics.dir/requires: CMakeFiles/Com_Mathematics.dir/C.cpp.o.requires
+CMakeFiles/Com_Mathematics.dir/requires: CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.o.requires
 
 .PHONY : CMakeFiles/Com_Mathematics.dir/requires
 

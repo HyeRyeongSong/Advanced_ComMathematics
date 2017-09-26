@@ -1,5 +1,5 @@
 //
-// Created by HyeRyeongSong on 2017. 9. 21..
+// Created by HyeRyeongSong on 2017. 9. 26..
 //
 
 #include <iostream>
@@ -11,20 +11,25 @@ double Fuction(double dValue);
 
 int main()
 {
-    double dA = 1.0;
-    double dB = 99.0;
+    double dA = 3.0;
+    double dB = 4.0;
     double dfA = 0;
     double dfB = 0;
     double dC = 0;
     double dfC = 0;
+    double dStepSize = 0;
     bool bIsA = true; //if Update is a=c --> true
     double dError = 0;
+
+    printf("   %-8s%-8s%-8s%-9s%-8s%-8s%-8s%-9s\n", "a", "b", "f(a)", "f(b)", "c",
+           "f(c)", "Update", "step size");
+
 
     while(true)
     {
         dfA = Fuction(dA);
         dfB = Fuction(dB);
-        dC = (dA + dB) / 2;
+        dC = ((dA * dfB) - (dB * dfA)) / (dfB - dfA);
         dfC = Fuction(dC);
         if(dfC < 0)
         {
@@ -41,24 +46,27 @@ int main()
                 bIsA = false;
         }
 
-        printf("a : %3.5f, b : %3.5f, f(a) : %3.5f, f(b) : %3.5f, c = (a+b)/2 : %3.5f, "
-                       "f(c) : %3.5f ", dA, dB, dfA, dfB, dC, dfC);
+        printf("%3.5f,%3.5f,%3.5f,%3.5f,%3.5f, %3.5f", dA, dB, dfA, dfB, dC, dfC);
 
         if(bIsA)
         {
+            dStepSize = abs(dA - dC);
             dA = dC;
-            cout << "Update: a=c ";
+            cout << "   a = c   ";
+            printf("%3.5f\n", dStepSize);
+            if(dStepSize < 0.001)
+                break;
         }
         else
         {
+            dStepSize = abs(dB - dC);
             dB = dC;
-            cout << "Update: a=b ";
+            cout << "   b = c   ";
+            printf("%3.5f\n", dStepSize);
+            if(dStepSize < 0.001)
+                break;
+
         }
-
-        printf("new b - a: %3.5f\n", abs(dB - dA));
-
-        if(abs(dB -dA) <= 0.00001)
-            break;
     }
 
     return 0;
@@ -66,5 +74,5 @@ int main()
 
 double Fuction(double dValue)
 {
-    return sin(dValue);
+    return (pow(M_E, -dValue) * ((3.2 * sin(dValue) - 0.5 * cos(dValue))));
 }
