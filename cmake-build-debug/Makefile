@@ -123,32 +123,32 @@ Com_Mathematics/fast:
 	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/build
 .PHONY : Com_Mathematics/fast
 
-Tuesday_Handwriting.o: Tuesday_Handwriting.cpp.o
+A.o: A.cpp.o
 
-.PHONY : Tuesday_Handwriting.o
+.PHONY : A.o
 
 # target to build an object file
-Tuesday_Handwriting.cpp.o:
-	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.o
-.PHONY : Tuesday_Handwriting.cpp.o
+A.cpp.o:
+	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/A.cpp.o
+.PHONY : A.cpp.o
 
-Tuesday_Handwriting.i: Tuesday_Handwriting.cpp.i
+A.i: A.cpp.i
 
-.PHONY : Tuesday_Handwriting.i
+.PHONY : A.i
 
 # target to preprocess a source file
-Tuesday_Handwriting.cpp.i:
-	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.i
-.PHONY : Tuesday_Handwriting.cpp.i
+A.cpp.i:
+	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/A.cpp.i
+.PHONY : A.cpp.i
 
-Tuesday_Handwriting.s: Tuesday_Handwriting.cpp.s
+A.s: A.cpp.s
 
-.PHONY : Tuesday_Handwriting.s
+.PHONY : A.s
 
 # target to generate assembly for a file
-Tuesday_Handwriting.cpp.s:
-	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/Tuesday_Handwriting.cpp.s
-.PHONY : Tuesday_Handwriting.cpp.s
+A.cpp.s:
+	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/A.cpp.s
+.PHONY : A.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Com_Mathematics"
-	@echo "... Tuesday_Handwriting.o"
-	@echo "... Tuesday_Handwriting.i"
-	@echo "... Tuesday_Handwriting.s"
+	@echo "... A.o"
+	@echo "... A.i"
+	@echo "... A.s"
 .PHONY : help
 
 
