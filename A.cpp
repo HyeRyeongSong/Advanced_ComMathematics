@@ -1,5 +1,5 @@
 //
-// Created by HyeRyeongSong on 2017. 9. 21..
+// Created by HyeRyeongSong on 2017. 10. 4..
 //
 
 #include <iostream>
@@ -11,23 +11,24 @@ double Fuction(double dValue);
 
 int main()
 {
-    double dA = 3.0;
-    double dB = 4.0;
+    double dA = 1.0;
+    double dB = 2.0;
     double dfA = 0;
     double dfB = 0;
     double dC = 0;
     double dfC = 0;
+    double dStepSize = 0;
     bool bIsA = true; //if Update is a=c --> true
-    double dError = 0;
 
-    printf("     %-8s%-8s%-8s%-9s%-8s%-8s%-8s%-9s\n", "a", "b", "f(a)", "f(b)", "c",
-           "f(c)", "Update", " B - A ");
+    printf("   %-8s%-8s%-8s%-9s%-8s%-8s%-8s%-9s\n", "a", "b", "f(a)", "f(b)", "c",
+           "f(c)", "Update", "step size");
+
 
     while(true)
     {
         dfA = Fuction(dA);
         dfB = Fuction(dB);
-        dC = (dA + dB) / 2;
+        dC = ((dA * dfB) - (dB * dfA)) / (dfB - dfA);
         dfC = Fuction(dC);
         if(dfC < 0)
         {
@@ -44,23 +45,27 @@ int main()
                 bIsA = false;
         }
 
-        printf("%3.5f,%3.5f,%3.5f,%3.5f,%3.5f, %-3.5f", dA, dB, dfA, dfB, dC, dfC);
+        printf("%3.5f,%3.5f,%3.5f,%3.5f,%3.5f, %3.5f", dA, dB, dfA, dfB, dC, dfC);
 
         if(bIsA)
         {
+            dStepSize = abs(dA - dC);
             dA = dC;
-            printf("%-8s", "  a = c    ");
+            cout << "   a = c   ";
+            printf("%3.5f\n", dStepSize);
+            if(dStepSize < 0.01)
+                break;
         }
         else
         {
+            dStepSize = abs(dB - dC);
             dB = dC;
-            printf("%-8s", "   a = b    ");
+            cout << "   b = c   ";
+            printf("%3.5f\n", dStepSize);
+            if(dStepSize < 0.01)
+                break;
+
         }
-
-        printf("%3.5f\n", abs(dB - dA));
-
-        if(abs(dB -dA) < 0.001)
-            break;
     }
 
     return 0;
@@ -68,5 +73,5 @@ int main()
 
 double Fuction(double dValue)
 {
-    return (pow(M_E, dValue) * ((3.2 * sin(dValue) - 0.5 * cos(dValue))));
+    return (pow(dValue, 2) - 3);
 }
