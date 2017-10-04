@@ -11,8 +11,9 @@ double Fuction(double dValue);
 
 int main()
 {
-    double dA = 3.0;
-    double dB = 4.0;
+    int i = 1;
+    double dA = 2.0;
+    double dB = 3.0;
     double dfA = 0;
     double dfB = 0;
     double dC = 0;
@@ -20,8 +21,8 @@ int main()
     double dStepSize = 0;
     bool bIsA = true; //if Update is a=c --> true
 
-    printf("   %-8s%-8s%-8s%-9s%-8s%-8s%-8s%-9s\n", "a", "b", "f(a)", "f(b)", "c",
-           "f(c)", "Update", "step size");
+    printf("   %-8s%-8s%-8s%-8s%-9s%-8s%-8s\n", "N" ,"a", "b", "f(a)", "f(b)", "c",
+           "f(c)");
 
 
     while(true)
@@ -45,24 +46,20 @@ int main()
                 bIsA = false;
         }
 
-        printf("%3.5f,%3.5f,%3.5f,%3.5f,%3.5f, %3.5f", dA, dB, dfA, dfB, dC, dfC);
+        printf("   %-3d %3.5f,%3.5f,%3.5f,%3.5f,%3.5f, %3.5f\n", i++, dA, dB, dfA, dfB, dC, dfC);
 
         if(bIsA)
         {
             dStepSize = abs(dA - dC);
             dA = dC;
-            cout << "   a = c   ";
-            printf("%3.5f\n", dStepSize);
-            if(dStepSize < 0.001)
+            if(dStepSize <= 0.0009)
                 break;
         }
         else
         {
             dStepSize = abs(dB - dC);
             dB = dC;
-            cout << "   b = c   ";
-            printf("%3.5f\n", dStepSize);
-            if(dStepSize < 0.001)
+            if(dStepSize <= 0.0009)
                 break;
 
         }
@@ -73,5 +70,5 @@ int main()
 
 double Fuction(double dValue)
 {
-    return (pow(M_E, -dValue) * ((3.2 * sin(dValue)) - (0.5 * cos(dValue))));
+    return ((dValue * log10(dValue)) - 1);
 }
