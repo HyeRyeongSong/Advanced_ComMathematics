@@ -30,7 +30,7 @@ int main()
 
         printf("   %-3d %3.5f, %3.5f, %3.5f, %3.5f\n", i++, dX, dfX, df_prime_X, dX_next);
 
-        if(abs(dX_next-dX) < 0.00005)
+        if(abs(dfX) < 0.001)
         {
             break;
         }
