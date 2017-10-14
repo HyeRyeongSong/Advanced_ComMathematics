@@ -3,5 +3,5 @@ project(Com_Mathematics)
 
 set(CMAKE_CXX_STANDARD 11)
 
-set(SOURCE_FILES C.cpp)
+set(SOURCE_FILES B.cpp)
 add_executable(Com_Mathematics ${SOURCE_FILES})
