@@ -8,18 +8,37 @@
 using namespace std;
 
 double Function(double dValue);
+void SecantMethod(double x0, double x1);
 
 int main()
 {
+    SecantMethod(0.0, 1.8);
+    SecantMethod(0.6, 2.2);
+    SecantMethod(0.6, 1.8);
+    SecantMethod(2.0, 2.6);
+    SecantMethod(0.2, 1.2);
+    SecantMethod(0.6, 1.2);
+    SecantMethod(0.0, 2.2);
+
+    return 0;
+}
+
+double Function(double dValue)
+{
+    return 3*dValue + sin(dValue) - pow(M_E, dValue);
+}
+
+void SecantMethod(double x0, double x1)
+{
     int i = 0;
-    double dX_previous = -10;
-    double dX = -9.8;
+    double dX_previous = x0;
+    double dX = x1;
     double dX_next = 0;
     double dfX_previous = 0;
     double dfX = 0;
     double dfX_next = 0;
 
-    printf("   %-8s%-8s%-8s%-8s  %-10s %s\n", "N" ,"X_n-1", "X_n", "X_n+1", "f(X_n+1)", "(X_n+1)-(X_n)");
+    printf("  %-5s%-7s%-8s%-8s  %-10s %s\n", "N" ,"X_n-1", "X_n", "X_n+1", "f(X_n+1)", "(X_n+1)-(X_n)");
 
 
     while(true)
@@ -39,12 +58,9 @@ int main()
         dX = dX_next;
     }
 
-    return 0;
+    cout << "The root of x = " << dX << endl;
+    cout << "---------------------------------------------------------\n";
 }
 
-double Function(double dValue)
-{
-    return (pow(dValue, 3) -2 * pow(dValue,2) +1);
-}
 
 
