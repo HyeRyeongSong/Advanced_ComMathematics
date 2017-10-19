@@ -123,32 +123,32 @@ Com_Mathematics/fast:
 	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/build
 .PHONY : Com_Mathematics/fast
 
-C_b.o: C_b.cpp.o
+E.o: E.cpp.o
 
-.PHONY : C_b.o
+.PHONY : E.o
 
 # target to build an object file
-C_b.cpp.o:
-	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/C_b.cpp.o
-.PHONY : C_b.cpp.o
+E.cpp.o:
+	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/E.cpp.o
+.PHONY : E.cpp.o
 
-C_b.i: C_b.cpp.i
+E.i: E.cpp.i
 
-.PHONY : C_b.i
+.PHONY : E.i
 
 # target to preprocess a source file
-C_b.cpp.i:
-	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/C_b.cpp.i
-.PHONY : C_b.cpp.i
+E.cpp.i:
+	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/E.cpp.i
+.PHONY : E.cpp.i
 
-C_b.s: C_b.cpp.s
+E.s: E.cpp.s
 
-.PHONY : C_b.s
+.PHONY : E.s
 
 # target to generate assembly for a file
-C_b.cpp.s:
-	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/C_b.cpp.s
-.PHONY : C_b.cpp.s
+E.cpp.s:
+	$(MAKE) -f CMakeFiles/Com_Mathematics.dir/build.make CMakeFiles/Com_Mathematics.dir/E.cpp.s
+.PHONY : E.cpp.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Com_Mathematics"
-	@echo "... C_b.o"
-	@echo "... C_b.i"
-	@echo "... C_b.s"
+	@echo "... E.o"
+	@echo "... E.i"
+	@echo "... E.s"
 .PHONY : help
 
 
