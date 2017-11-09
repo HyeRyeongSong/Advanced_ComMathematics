@@ -6,7 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/Users/hyeryeongsong/Com_Mathematics/C_b.cpp
+/Users/hyeryeongsong/Com_Mathematics/D_3.cpp
 iostream
+-
+cmath
 -
 
