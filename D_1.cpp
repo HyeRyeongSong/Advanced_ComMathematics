@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class D_2
+class D_1
 {
 private:
     double dArr[3][3];
@@ -16,7 +16,7 @@ private:
     double dMaxEA;
 public:
 
-    D_2()
+    D_1()
     {
         for(int i=0; i<3; ++i)
         {
@@ -50,17 +50,17 @@ public:
 
     void Calculate_x1()
     {
-        dX[0] = (dD[0] - dArr[0][1]*dX[1] - dArr[0][2]*dX[2]) / dArr[0][0];
+        dX[0] = (dD[0] - dArr[0][1]*dPreX[1] - dArr[0][2]*dPreX[2]) / dArr[0][0];
     }
 
     void Calculate_x2()
     {
-        dX[1] = (dD[1] - dArr[1][0]*dX[0] - dArr[1][2]*dX[2]) / dArr[1][1];
+        dX[1] = (dD[1] - dArr[1][0]*dPreX[0] - dArr[1][2]*dPreX[2]) / dArr[1][1];
     }
 
     void Calculate_x3()
     {
-        dX[2] = (dD[2] - dArr[2][0]*dX[0] - dArr[2][1]*dX[1]) / dArr[2][2];
+        dX[2] = (dD[2] - dArr[2][0]*dPreX[0] - dArr[2][1]*dPreX[1]) / dArr[2][2];
     }
 
     void CalculateEA_1()
@@ -105,16 +105,17 @@ public:
         {
             cout << "Iteration " << iIteration++ << endl;
             dPreX[0] = dX[0];
+            dPreX[1] = dX[1];
+            dPreX[2] = dX[2];
+
             Calculate_x1();
             CalculateEA_1();
             printf("%3.5f       %3.5f\n", dX[0], dEA[0]);
 
-            dPreX[1] = dX[1];
             Calculate_x2();
             CalculateEA_2();
             printf("%3.5f       %3.5f\n", dX[1], dEA[1]);
 
-            dPreX[2] = dX[2];
             Calculate_x3();
             CalculateEA_3();
             dMax_EA();
@@ -126,9 +127,9 @@ public:
 
 int main()
 {
-    D_2 d3;
+    D_1 d1;
 
-    d3.Mange();
+    d1.Mange();
 
     return 0;
 }
