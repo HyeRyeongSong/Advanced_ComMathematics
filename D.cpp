@@ -23,18 +23,13 @@ int main()
     double dmeanY;
     double dA0;
     double dA1;
-    
-    double dYminusMean_square[n];
-    double dSt=0;
-    double dEquation_square[n];
-    double dSr=0;
-
-    double dR;
+    double a, b;
 
     cout << "Input variables for X: ";
 
     for(int i=0; i<n; ++i) {
         cin >> dX[i];
+        dX[i] = log10(dX[i]);
         dSumX += dX[i];
         dX_square[i] = pow(dX[i], 2);
         dSumX_square += dX_square[i];
@@ -44,6 +39,7 @@ int main()
 
     for(int i=0; i<n; ++i) {
         cin >> dY[i];
+        dY[i] = log10(dY[i]);
         dSumY += dY[i];
         dXY[i] = dX[i] * dY[i];
         dSumXY += dXY[i];
@@ -55,25 +51,13 @@ int main()
     dA1 = ((n * dSumXY) - (dSumX * dSumY)) / ((n * dSumX_square) - pow(dSumX, 2));
     dA0 = dmeanY - (dA1 * dmeanX);
     
-    for(int i=0; i<n; ++i)
-    {
-        dYminusMean_square[i] = pow((dY[i] - dmeanY), 2);
-        dSt += dYminusMean_square[i];
-
-        dEquation_square[i] = pow((dY[i] - dA0 - (dA1 * dX[i])), 2);
-        dSr += dEquation_square[i];
-    }
-
-    dR = sqrt(((dSt - dSr) / dSt));
-
-    if(dA1 < 0)
-        dR*=(-1);
-
     cout << "a0 = " << dA0 << endl;
     cout << "a1 = " << dA1 << endl;
-    cout << "r = " << dR << endl;
 
-    cout << endl << "thus, y = " << dA0 << " + " << dA1 << "x" << endl;
+    b = dA0;
+    a = pow(10, dA0);
+
+    cout << endl << "thus, y = " << a << "x^" << b<< endl;
 
     return 0;
 }
